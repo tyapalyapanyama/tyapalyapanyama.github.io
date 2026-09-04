@@ -1,0 +1,107 @@
+/*!
+Theme Name: Theme
+*/
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+.dropdown-submenu:hover>a:after{border-left-color:#555;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+@media screen and (max-width: 767px) {
+    .navbar-nav .open .dropdown-menu .dropdown-menu > li > a {
+        padding-left: 50px;
+    }
+}
+
+/* Приподнимаем контент всех страниц ровно на высоту новых ссылок (без дыр снизу) */
+body {
+    padding-bottom: 40px !important;
+}
+
+/* --- Footer disclaimer --- */
+/* 1. Блокируем клики для ВСЕХ технических блоков футера и убиваем воздух */
+.footer-wrap,
+.footer-wrap .container,
+.footer-wrap footer,
+.footer-bottom-disclaimer,
+.footer-bottom-disclaimer .row,
+.footer-bottom-disclaimer .col-xs-12 {
+    pointer-events: none !important; /* Клики пролетают насквозь к контенту выше */
+    margin-bottom: 0 !important;     /* Убиваем внешние отступы */
+    padding-bottom: 0 !important;    /* Убиваем внутренние отступы */
+}
+
+/* 2. РАЗРЕШАЕМ клики ТОЛЬКО по реальным ссылкам и тексту контактов внутри подвала */
+.footer-wrap a, 
+.footer-wrap .f-contacts__content {
+    pointer-events: auto !important; 
+}
+
+/* 3. Оформление линии (не на всю ширину) */
+.footer-wrap .footer-sep-line {
+    border: 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.5) !important; /* Легкий цвет */
+    width: 75% !important; /* Делаем линию короче (занимает 75% ширины) */
+    margin: 4px auto !important; /* [ИЗМЕНЕНО]: уменьшили с 10px, чтобы сэкономить высоту */
+}
+
+/* 4. Оформление текста (светлее и без воздуха внизу) */
+.footer-wrap .disclaimer-text {
+    text-align: center !important;
+    font-size: 11px !important;
+    line-height: 1.25 !important; /* [ИЗМЕНЕНО]: сжатый интервал вместо 1.4 */
+    color: #a5a5a5 !important;
+    
+    /* Центрирование */
+    margin: 0 auto !important;
+    display: block !important;
+    float: none !important;
+    
+    /* Ширина: делаем почти на весь экран, но с запасом */
+    width: 95% !important; 
+    max-width: 100% !important; /* Убираем лимит в 900px */
+    
+    /* Внутренние отступы (чтобы не липло к краям) */
+    padding: 0 20px 4px 20px !important; /* [ИЗМЕНЕНО]: уменьшили с 10px */
+    
+    pointer-events: none !important;
+}
+
+/* На всякий случай убираем возможные сдвиги у родительского ряда */
+.footer-bottom-disclaimer .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center !important;
+}
+
+/* Уменьшение шрифта юридических ссылок в футере */
+.footer-policy-links a {
+    font-size: 11px !important;
+    line-height: 1.25 !important; /* [ИЗМЕНЕНО]: уменьшили с 1.5 */
+    color: #a5a5a5 !important;
+    text-decoration: underline !important;
+    display: inline-block !important;
+    margin: 1px 0 !important; /* [ИЗМЕНЕНО]: минимальный зазор между ссылками */
+}
+
+.footer-policy-links a:hover {
+    color: #ffffff !important;
+}
+
+/* --- custom --- */
+
+/* Стили для выравнивания по ширине в редакторе */
+.alignjustify {
+    text-align: justify;
+}
+
+/* Чтобы вложенные списки не выходили за край экрана */
+/* 1. Первый уровень меню у последних 3-х пунктов: ровняем по правому краю */
+.primary-menu .navbar-nav > li:nth-last-child(-n+3) > .menu-dropdown {
+    left: auto !important;
+    right: 0 !important;
+}
+/* 2. Вложенные подменю (такие как "Публикации за года") у правых пунктов: открываем ВЛЕВО */
+.primary-menu .navbar-nav > li:nth-last-child(-n+3) li > .menu-dropdown {
+    left: auto !important;
+    right: 100% !important;
+}

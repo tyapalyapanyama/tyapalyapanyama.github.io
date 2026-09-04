@@ -1,0 +1,806 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@fa-font-path :   "../fonts";
+@media (min-width: 1200px) {
+  body {
+    margin-bottom: 503px !important;} }
+
+.logo_header {
+  color: #253b4f; }
+
+.block-two-colors {
+  display: flex; }
+
+.search-main {
+  background: #002e3c; }
+  .search-main__wrap {
+    padding: 44px 30px 0; }
+  .search-main__title {
+    margin-bottom: 20px;
+    font-size: 30px; }
+    .search-main__title, .search-main__title a {
+      color: #fff; }
+  .search-main__form input[type="text"] {
+    width: 75%;
+    padding: 11px 13px 14px;
+    float: left;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #77898f;
+    border-radius: 3px 0 0 3px;
+    font-size: 14px;
+    color: #5c6670; }
+  .search-main__form input[type="submit"] {
+    width: 25%;
+    padding: 11px 0 13px;
+    background: #ec5a5b;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    font-size: 16px;
+    color: #fff; }
+
+.sidebar__title {
+  margin-top: 18px;
+  font-size: 22px;
+  font-weight: bold; }
+
+.preheader {
+  padding: 16px 0 10px;
+  background: #002e3c; }
+  .preheader__address, .preheader__phone, .preheader__email {
+    margin-left: 16px;
+    margin-right: 28px; }
+    @media (max-width: 992px) {
+      .preheader__address, .preheader__phone, .preheader__email {
+        clear: left; } }
+
+.logo_header {
+  display: inline-block;
+  float: none;
+  margin: 22px 15px 0; }
+  @media (min-width: 1200px) {
+    .logo_header {
+      width: 280px;
+      display: flex;
+      float: left;
+      margin-right: 30px;
+      margin-left: 0; } }
+  .logo_header .logo__title {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 13px;
+    text-align: left;
+    display: none; }
+    @media (min-width: 1200px) {
+      .logo_header .logo__title {
+        display: block; } }
+
+.logo-main .logo__img {
+  width: 49px; }
+
+.logo-laboratory .logo__img {
+  width: 120px; }
+
+.logo-mathematics .logo__img {
+  width: 50px; }
+
+.header {
+  /*&__contacts {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #9daaaa;
+    text-align: right;
+  }
+  // &__address,
+  &__email,
+  &__phone {
+    float: right;
+  }
+  &__search {
+    @media (max-width: 641px) {
+      width: 240px;
+      margin: 0 auto;
+    }
+    @media (min-width: 641px) {
+      float: right;
+      margin-right: 30px;
+    }
+  }*/ }
+  @media (max-width: 992px) {
+    .header__wrap {
+      overflow: hidden; } }
+  .header__langs {
+    margin-top: 28px;
+    float: right;
+    text-transform: uppercase; }
+    @media (max-width: 991px) {
+      .header__langs {
+        display: none; } }
+    .header__langs .langs__item {
+      font-weight: bold;
+      color: #002e3c;
+      text-decoration: none; }
+      .header__langs .langs__item:hover {
+        text-decoration: underline; }
+      .header__langs .langs__item_active {
+        color: #ec5a5b; }
+      .header__langs .langs__item + .langs__item {
+        margin-left: 7px;
+        padding-left: 7px;
+        border-left: 1px solid #002e3c; }
+
+@media (min-width: 992px) {
+  .menu-langs {
+    display: none; } }
+
+.menu-langs__item {
+  float: left;
+  margin-top: 5px;
+  padding: 5px 10px 4px;
+  font-size: 22px;
+  text-transform: uppercase; }
+  .menu-langs__item_active {
+    color: #ec5a5b !important; }
+  .menu-langs__item + .menu-langs__item {
+    border-left: 1px solid #fff; }
+
+header {
+  margin-bottom: 20px;
+  text-align: center; }
+
+footer {
+  margin-top: 50px;
+  padding: 0 0 50px;
+  background: #002e3c; }
+
+.footer-title {
+  margin: 70px 0 43px;
+  padding-bottom: 13px;
+  font-size: 26px;
+  color: #fff;
+  position: relative; }
+  .footer-title:after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 3px;
+    background: #5a9e60;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1; }
+
+.footer-menu {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 23px;
+  position: relative; }
+  .footer-menu, .footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .footer-menu:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    top: 6px;
+    bottom: 11px;
+    left: 42.5%;
+    background: #043c4e; }
+  .footer-menu > li {
+    width: 40%;
+    margin-right: 10%; }
+    .footer-menu > li > a {
+      color: #fff; }
+  .footer-menu ul > li > a {
+    color: #3e7183; }
+
+.footer-contacts {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700; }
+  .footer-contacts, .footer-contacts a {
+    color: #fff; }
+  .footer-contacts p {
+    margin-bottom: 21px; }
+
+.primary-menu {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center; }
+  .primary-menu .navbar {
+    background: #002e3c; }
+  .primary-menu a {
+    color: #002e3c;
+    color: #fff; }
+  .primary-menu .nav > li a:hover, .primary-menu .nav > li a:focus {
+    background-color: transparent;
+    color: #ec5a5b; }
+  .primary-menu .nav .open > a, .primary-menu .nav .open > a:hover, .primary-menu .nav .open > a:focus, .primary-menu .nav .current-menu-ancestor > a, .primary-menu .nav .current-menu-ancestor > a:hover, .primary-menu .nav .current-menu-ancestor > a:focus {
+    background-color: transparent; }
+  .primary-menu .nav .active a {
+    background-color: transparent; }
+  .primary-menu .dropdown-menu, .primary-menu .menu-dropdown {
+    background: #002e3c !important;
+    border: 1px solid #112126;
+    border-radius: 0; }
+    @media (max-width: 767px) {
+      .primary-menu .dropdown-menu, .primary-menu .menu-dropdown {
+        text-align: center; } }
+    .primary-menu .dropdown-menu > li a, .primary-menu .menu-dropdown > li a {
+      padding: 7px 25px;
+      font-weight: bold;
+      color: #fff; }
+    .primary-menu .dropdown-menu > li + li, .primary-menu .menu-dropdown > li + li {
+      border-top: 1px solid #112126; }
+  .primary-menu .menu-dropdown .menu-dropdown {
+    left: 100%;
+    top: 0; }
+  .primary-menu .navbar-toggle {
+    background: #002e3c; }
+    .primary-menu .navbar-toggle .icon-bar {
+      background: #fff; }
+
+.breadcrumb {
+  display: none;
+  min-width: 310px;
+  margin: 0;
+  padding: 19px 22px 7px;
+  list-style: none;
+  background: #fff;
+  position: absolute;
+  bottom: 0; }
+  @media (min-width: 600px) {
+    .breadcrumb {
+      display: block; } }
+  @media (min-width: 992px) {
+    .breadcrumb {
+      right: 85px; } }
+  .breadcrumb:before, .breadcrumb:after {
+    content: " ";
+    display: table; }
+  .breadcrumb:after {
+    clear: both; }
+  .breadcrumb li, .breadcrumb a {
+    color: #002e3c; }
+  .breadcrumb li {
+    float: left; }
+    .breadcrumb li.sep {
+      margin: 0 14px 0 10px; }
+  .breadcrumb .active, .breadcrumb .active a {
+    color: #ec5a5b; }
+
+@media (max-width: 991px) {
+  .slider-main {
+    display: none; } }
+
+.slider .item {
+  height: 60rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.slider__content {
+  padding: 154px 92px; }
+  .slider__content, .slider__content a {
+    color: #fff; }
+
+.slider__title {
+  font-size: 27px; }
+
+.slider__text {
+  width: 460px;
+  padding-bottom: 27px;
+  position: relative; }
+  .slider__text:after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 6px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+.teaser {
+  padding-bottom: 20px; }
+  .teasers {
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fff; }
+  .teaser:hover {
+    text-decoration: none; }
+    .teaser:hover .teaser__title {
+      text-decoration: underline; }
+  .teaser__img {
+    max-width: 100%;
+    margin-bottom: 27px; }
+  .teaser__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px; }
+    .teaser__title, .teaser__title a {
+      color: #eb5556; }
+  .teaser__text {
+    min-width: 68px;
+    margin-bottom: 20px;
+    line-height: 17px;
+    color: #083544; }
+  .teaser__link {
+    /*display: block;
+    margin-top: 37px;
+    background: url(/_mirror/chebyshev.spbu.ru/wp-content/themes/theme/img/teaser-more.png) 100% 50% no-repeat;
+    font-size: 16px;
+    &, &:hover, &:focus {
+      color: #eb5556;
+    }*/
+    text-align: center; }
+    .teaser__link a {
+      display: inline-block;
+      padding: 13px 35px 14px;
+      background: #ec5a5b;
+      border-radius: 3px;
+      font-size: 16px;
+      text-align: center;
+      color: #fff !important; }
+
+.schedule-list__date {
+  padding: 10px;
+  background: #002e3c;
+  color: #fff; }
+
+.schedule-list__item {
+  padding: 10px;
+  background: #fff; }
+
+.schedule-list__item + .schedule-list__item {
+  border-top: 1px solid #93a4a5; }
+
+.schedule__time, .schedule__place, .schedule__title {
+  font-weight: 700;
+  color: #253b4f; }
+
+.schedule__time, .schedule__place {
+  padding-left: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  font-size: 12px; }
+
+.schedule__time {
+  background-image: url(/_mirror/chebyshev.spbu.ru/wp-content/themes/theme/img/schedule__time-bg.png); }
+
+.schedule__place {
+  margin-left: 10px;
+  background-image: url(/_mirror/chebyshev.spbu.ru/wp-content/themes/theme/img/schedule__place-bg.png); }
+
+.schedule__teacher {
+  padding-right: 5px;
+  font-style: italic; }
+
+.schedule.t1 {
+  background: #f7d187; }
+
+.schedule.t2 {
+  background: #b1e298; }
+  
+.schedule.t3 {
+  background: #add8e6; }
+
+.schedule-dp .ui-datepicker-header, .schedule-main-dp .ui-datepicker-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #002e3c;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  position: relative; }
+
+.schedule-dp .ui-datepicker-prev, .schedule-dp .ui-datepicker-next, .schedule-main-dp .ui-datepicker-prev, .schedule-main-dp .ui-datepicker-next {
+  width: 39px;
+  height: 39px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 0; }
+  .schedule-dp .ui-datepicker-prev:after, .schedule-dp .ui-datepicker-next:after, .schedule-main-dp .ui-datepicker-prev:after, .schedule-main-dp .ui-datepicker-next:after {
+    display: block;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-style: solid;
+    border-color: #fff;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(45deg); }
+
+.schedule-dp .ui-datepicker-prev, .schedule-main-dp .ui-datepicker-prev {
+  float: left;
+  left: 0; }
+  .schedule-dp .ui-datepicker-prev:after, .schedule-main-dp .ui-datepicker-prev:after {
+    border-width: 0 0 2px 2px;
+    left: 16px; }
+
+.schedule-dp .ui-datepicker-next, .schedule-main-dp .ui-datepicker-next {
+  float: right;
+  right: 0; }
+  .schedule-dp .ui-datepicker-next:after, .schedule-main-dp .ui-datepicker-next:after {
+    border-width: 2px 2px 0 0;
+    right: 16px; }
+
+.schedule-dp .ui-datepicker-calendar, .schedule-main-dp .ui-datepicker-calendar {
+  width: 100%;
+  border-collapse: collapse; }
+  .schedule-dp .ui-datepicker-calendar th, .schedule-dp .ui-datepicker-calendar td, .schedule-main-dp .ui-datepicker-calendar th, .schedule-main-dp .ui-datepicker-calendar td {
+    text-align: center; }
+  .schedule-dp .ui-datepicker-calendar th, .schedule-main-dp .ui-datepicker-calendar th {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    background: #ec5a5b;
+    border: 1px solid #ec5a5b;
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff; }
+  .schedule-dp .ui-datepicker-calendar td, .schedule-main-dp .ui-datepicker-calendar td {
+    padding-top: 2.25%;
+    padding-bottom: 2.25%;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    /*&.ui-datepicker-today {
+              background: #5a9e60;
+              &, a {
+                color: #fff;
+              }
+            }*/ }
+
+.schedule-main-dp .ui-datepicker td.ui-datepicker-today {
+  background: #5a9e60; }
+  .schedule-main-dp .ui-datepicker td.ui-datepicker-today, .schedule-main-dp .ui-datepicker td.ui-datepicker-today a {
+    color: #fff; }
+
+.schedule-main-dp .ui-datepicker td.ui-datepicker-current-day {
+  background: #ec5a5b; }
+  .schedule-main-dp .ui-datepicker td.ui-datepicker-current-day, .schedule-main-dp .ui-datepicker td.ui-datepicker-current-day a {
+    color: #fff; }
+
+.schedule-main {
+  padding-top: 44px;
+  padding-bottom: 60px;
+  background: #5a9e60; }
+  .schedule-main__wrap {
+    padding-left: 30px;
+    padding-right: 30px; }
+  .schedule-main__title, .schedule-main__title a, .schedule-main__list, .schedule-main__list a {
+    color: #333; }
+  .schedule-main__title {
+    margin-bottom: 17px;
+    font-size: 30px; }
+  .schedule-main__list {
+    font-size: 14px;
+    line-height: 17px; }
+  .schedule-main__calendar {
+    padding-top: 5px; }
+
+.schedule-nav {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #93a4a5; }
+  .schedule-nav__prev, .schedule-nav__next {
+    position: relative; }
+    .schedule-nav__prev:hover, .schedule-nav__next:hover {
+      color: #f7a83e; }
+    .schedule-nav__prev:after, .schedule-nav__next:after {
+      display: block;
+      content: '';
+      border: 6px solid transparent;
+      position: absolute;
+      z-index: 1;
+      top: 3px; }
+  .schedule-nav__prev {
+    padding-left: 15px;
+    float: left; }
+    .schedule-nav__prev:after {
+      border-right-color: #f7a83e;
+      left: -5px; }
+  .schedule-nav__next {
+    padding-right: 15px;
+    float: right; }
+    .schedule-nav__next:after {
+      border-left-color: #f7a83e;
+      right: -5px; }
+  .schedule-nav__current {
+    display: block;
+    font-weight: 600;
+    text-align: center; }
+
+.pubs-main__title {
+  margin: 54px 0 22px;
+  font-size: 30px;
+  text-align: center; }
+  .pubs-main__title, .pubs-main__title a {
+    color: #002e3c; }
+
+.pubs-main__list {
+  padding-bottom: 10px; }
+
+.pubs-main-all {
+  max-width: 264px;
+  margin-bottom: 20px;
+  display: block;
+  border: 1px solid #908e8e;
+  text-align: center;
+  font-size: 80px;
+  line-height: 4.53em;
+  color: #002e3c; }
+  .pubs-main-all:hover {
+    text-decoration: none; }
+
+.pub-main {
+  padding-bottom: 30px; }
+  .pub-main__img {
+    max-width: 100%;
+    margin-bottom: 20px; }
+  .pub-main__title {
+    padding: 0 13px;
+    line-height: 17px; }
+    .pub-main__title, .pub-main__title a {
+      color: #002e3c; }
+
+.pubs-main-counter {
+  margin: 30px 0;
+  background: #f8f8f8; }
+
+.pub-main-counter {
+  padding: 72px 0 20px;
+  background-position: 50% 30px;
+  background-repeat: no-repeat; }
+  .pub-main-counter:nth-child(even) {
+    background-color: #efefef; }
+  .pub-main-counter_i1 {
+    background-image: url(/_mirror/chebyshev.spbu.ru/wp-content/themes/theme/img/pub-main-counter-1.jpg); }
+  .pub-main-counter_i2 {
+    background-image: url(/_mirror/chebyshev.spbu.ru/wp-content/themes/theme/img/pub-main-counter-2.jpg); }
+  .pub-main-counter_i3 {
+    background-image: url(/_mirror/chebyshev.spbu.ru/wp-content/themes/theme/img/pub-main-counter-3.jpg); }
+  .pub-main-counter_i4 {
+    background-image: url(/_mirror/chebyshev.spbu.ru/wp-content/themes/theme/img/pub-main-counter-4.jpg); }
+  .pub-main-counter__value, .pub-main-counter__title {
+    text-align: center; }
+  .pub-main-counter__value {
+    font-size: 72px;
+    color: #002e3c; }
+  .pub-main-counter__title {
+    min-height: 44px;
+    font-size: 16px;
+    color: #eb5556; }
+
+.publication {
+  padding-left: 30px;
+  line-height: 24px;
+  color: grey;
+  text-indent: -28px; }
+  .publication__num {
+    width: 25px;
+    display: inline-block;
+    font-size: 12px;
+    text-align: right;
+    color: #000; }
+  .publication__title {
+    font-size: 16px; }
+
+.pub-years {
+  margin: 30px 0 20px;
+  font-size: 18px;
+  text-align: center; }
+  .pub-years__item {
+    display: inline-block;
+    margin: 0 11px; }
+    .pub-years__item, .pub-years__item a {
+      color: #112126; }
+    .pub-years__item_current {
+      color: #ec5a5b; }
+
+.pub-search {
+  margin-top: 20px;
+  padding: 30px;
+  background: #ededed;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #002e3c;
+  text-align: center;
+  /*input {
+    margin-left: 30px;
+  }*/ }
+  .pub-search label {
+    font-weight: normal; }
+    .pub-search label + input {
+      margin-left: 15px; }
+    .pub-search label + select {
+      margin-left: 15px;
+      margin-right: 30px; }
+  .pub-search select {
+    padding: 10px;
+    border: 1px solid #77898f;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #5c6670; }
+  .pub-search button {
+    width: 100px;
+    margin-left: 30px;
+    padding: 11px 0 13px;
+    background: #ec5a5b;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff; }
+  .pub-search-tags {
+    display: flex;
+    flex-wrap: wrap; }
+    .pub-search-tags > div {
+      margin: 5px 10px; }
+    .pub-search-tags input {
+      margin-right: 5px; }
+
+.news__date, .news-list__date {
+  color: #ec5a5b; }
+
+.news-list__item h4, .news-list__item h4 a {
+  color: #112126; }
+
+.news-main-title {
+  margin: 42px 0 44px;
+  font-size: 30px;
+  text-align: center; }
+  .news-main-title, .news-main-title a {
+    color: #002e3c; }
+
+.news-main {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .news-main:hover {
+    text-decoration: none; }
+    .news-main:hover .news-main__title {
+      text-decoration: underline; }
+  .news-main__img {
+    max-width: 100%;
+    margin-bottom: 25px; }
+  .news-main__title {
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: bold;
+    color: #002e3c; }
+    @media (min-width: 992px) {
+      .news-main__title {
+        min-height: 87px; } }
+  .news-main__text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #002e3c;
+    /*@media (min-width: 992px) {
+      min-height: 84px;
+    }*/ }
+  .news-main__link {
+    width: 158px;
+    display: block;
+    margin: 0 auto;
+    padding: 13px 0 14px;
+    background: #ec5a5b;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff !important; }
+
+.partners {
+  display: flex; }
+  .partners__wrap {
+    width: 40%; }
+  .partners__content {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap; }
+
+.teachers__post {
+  font-size: 13px;    
+  color: #eb5556; }
+
+.teacher__info {
+  padding-top: 10px; }
+
+.people-past a {
+  display: inline-block;
+  padding: 13px 35px 14px;
+  background: #ec5a5b;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff !important; }
+
+.visitors {
+  /*
+  &__start, &__end {
+    width: 100px;
+  }*/ }
+  @media (min-width: 992px) {
+    .visitors__name {
+      width: 33%; } }
+  @media (min-width: 992px) {
+    .visitors__organization {
+      width: 45%; } }
+  .visitors__head {
+    font-weight: bold; }
+
+.conferences__row:last-child {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #93a4a5; }
+
+.conferences__title, .conferences__place {
+  flex-basis: 50%; }
+
+@media (min-width: 992px) {
+  .conferences__date {
+    width: 200px; } }
+
+.conferences__start, .conferences__end {
+  width: 100px; }
+
+.conferences__head {
+  font-weight: bold; }
+
+.course__date {
+  margin-bottom: 10px;
+  color: #ec5a5b; }
+
+.nav-tabs {
+  border-bottom: 2px solid #ec5a5b; }
+  .nav-tabs > li.active > a {
+    border-color: #ec5a5b #ec5a5b transparent !important; }
+
+.pagination__list a, .pagination__list .page-numbers {
+  color: #112126; }
+
+.pagination__list .current {
+  color: #ec5a5b; }
+
+.page-news {
+  background-image: url(/_mirror/chebyshev.spbu.ru/pages/news.jpg); }
+
+.page-cover {
+  width: 100%;
+  height: 26.5rem;
+  padding: 98px 60px 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #002e3c;
+  position: relative; }
+
+.page-title {
+  padding-bottom: 14px;
+  font-size: 54px;
+  color: #fff;
+  position: relative; }
+  .page-title:after {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    bottom: 0; }
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }    
+
+/*# sourceMappingURL=laboratory.css.map */

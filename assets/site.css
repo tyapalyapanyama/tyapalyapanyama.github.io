@@ -60,7 +60,45 @@ body.laboratory article {
 
 .profile-links a,
 .profile-nav a {
-    white-space: nowrap;
+    overflow-wrap: anywhere;
+}
+
+.language-switch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: 0 0 18px;
+    font-size: 1rem;
+}
+
+.language-switch a {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #767d83;
+    border-radius: 4px;
+    color: #202830;
+    background: transparent;
+    text-decoration: none;
+}
+
+.language-switch a[aria-current="page"] {
+    color: #fff;
+    background: #414b54;
+    border-color: #414b54;
+}
+
+.language-switch a:hover {
+    text-decoration: underline;
+}
+
+.language-switch a:focus-visible {
+    outline: 3px solid #1d5d92;
+    outline-offset: 3px;
+}
+
+.content__wrapper a {
+    overflow-wrap: anywhere;
 }
 
 .profile-links span {
